@@ -11,3 +11,5 @@ RUN apt-get update && apt-get install -y \
 ENV LANG=ja_JP.UTF-8
 ENV TZ=Asia/Tokyo
 WORKDIR /app
+COPY . /app
+CMD ["sh", "run.sh"]
